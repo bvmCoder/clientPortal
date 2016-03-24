@@ -1,3 +1,7 @@
+/**
+ * Created by dPatel on 03.22.2015.
+ */
+
 angular.module("myApp")
 .controller('HomeController', HomeController);
 
