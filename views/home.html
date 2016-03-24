@@ -1,0 +1,88 @@
+<div class="modal-body" ng-show="hc.userInformation">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label>UserName</label>
+                <input type="text" class="form-control" ng-model="hc.user.userName" id="UserName" placeholder="UserName" />
+            </div>
+            <div class="form-group">
+                <label>FirstName</label>
+                <input type="text" class="form-control" ng-model="hc.user.firstName" id="FirstName" placeholder="FirstName" />
+            </div>
+            <div class="form-group">
+                <label>LastName</label>
+                <input type="text" class="form-control" ng-model="hc.user.lastName" id="LastName" placeholder="LastName" />
+            </div>
+            <div class="form-group">
+                <label>Date Of Birth</label>
+                <input type="date" class="form-control" ng-model="hc.user.birthday" id="dob" placeholder="DateOfBirth" />
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" ng-model="hc.user.email" id="email" placeholder="Email" />
+            </div>
+            <button type="button" class="btn btn-primary" ng-click="hc.bankDetails()">next</button>
+        </div>
+    </div>
+</div>
+<div class="modal-body" ng-hide="hc.BankInformation">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label>Bank Name</label>
+                <input type="text" class="form-control" ng-model="hc.user.userName" id="UserName" placeholder="UserName">
+            </div>
+            <div class="form-group">
+                <label>FirstName</label>
+                <input type="text" class="form-control" ng-model="hc.user.firstName" id="FirstName" placeholder="FirstName">
+            </div>
+            <div class="form-group">
+                <label>LastName</label>
+                <input type="text" class="form-control" ng-model="hc.user.lastName" id="LastName" placeholder="LastName" />
+            </div>
+            <div class="form-group">
+                <label>Date Of Birth</label>
+                <input type="date" class="form-control" ng-model="hc.user.birthday" id="dob" placeholder="DateOfBirth">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" ng-model="hc.user.email" id="email" placeholder="Email" />
+            </div>
+            <button type="button" class="btn btn-primary" ng-click="hc.UserDetails()">prev</button>
+            <button type="button" class="btn btn-primary" ng-click="hc.FamilyDetails()">next</button>
+        </div>
+    </div>
+</div>
+<div class="modal-body" ng-hide="hc.FamilyInformation">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label>family Details</label>
+                <input type="text" class="form-control" ng-model="hc.user.userName" id="UserName" placeholder="UserName" />
+            </div>
+            <div class="form-group">
+                <label>FirstName</label>
+                <input type="text" class="form-control" ng-model="hc.user.firstName" id="FirstName" placeholder="FirstName" />
+            </div>
+            <div class="form-group">
+                <label>LastName</label>
+                <input type="text" class="form-control" ng-model="hc.user.lastName" id="LastName" placeholder="LastName" />
+            </div>
+            <div class="form-group">
+                <label>Date Of Birth</label>
+                <input type="date" class="form-control" ng-model="hc.user.birthday" id="dob" placeholder="DateOfBirth" />
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" ng-model="hc.user.email" id="email" placeholder="Email" />
+            </div>
+            <button type="button" class="btn btn-primary" ng-click="hc.bankDetails()">prev</button>
+            <button type="button" class="btn btn-primary" ng-click="hc.saveButton()">save</button>
+        </div>
+    </div>
+</div>
+<div class="bottom_tabs col-xs-12">
+    <div class="col-xs-4" ng-click="hc.UserDetails()" ng-class="{'userActive': hc.userInformation}">User Tab</div>
+    <div class="col-xs-4" ng-click="hc.bankDetails()" ng-class="{'userActive': !hc.BankInformation}">Bank Tab</div>
+    <div class="col-xs-4" ng-click="hc.FamilyDetails()" ng-class="{'userActive': !hc.FamilyInformation}">Family Tab</div>
+</div>

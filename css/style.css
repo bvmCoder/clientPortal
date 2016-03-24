@@ -1,0 +1,84 @@
+/* custom css */
+
+
+.custom-navbar{
+    margin: 0px;
+    padding: 8px;
+    position: fixed;
+    top:0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+}
+.user_name {
+    font-size: 16px;
+    padding: 15px 20px;
+}
+.main_content{
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+    position: relative;
+    height: 572px;
+}
+.left_bar{
+    bottom: 0;
+
+    left:-200px;
+    overflow-x: auto;
+    position: absolute;
+    top: 0;
+    width: 200px;
+    transition: all 1s ease-in-out;
+
+}
+
+.left_bar.active{
+    left: 0;
+    transition: all 1s ease-in-out;
+}
+
+.left_bar ul{
+    float: left;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.left_bar ul li{
+    float: left;
+    width: 100%;
+    padding: 10px;
+
+}
+
+.left_bar ul li:hover{
+    background-color: #cccccc;
+}
+.right_content{
+    position: absolute;
+    right: 0px;
+    top:0px;
+    bottom: 0px;
+    left:0px;
+    transition: all 1s ease-in-out;
+}
+.right_content.active{
+    left:200px;
+    transition: all 1s ease-in-out;
+}
+.bottom_tabs{
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+
+}
+.bottom_tabs div{
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: center;
+}
+.userActive{
+    background-color: #337ab7;
+}
